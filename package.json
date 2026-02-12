@@ -1,0 +1,15 @@
+{
+  "name": "internhunt-root",
+  "private": true,
+  "scripts": {
+    "backend": "cd Backend && npm run dev",
+    "frontend": "cd Frontend && npm start",
+    "scraper": "cd Scraping && node saveToDB.js",
+    "scrape:watch": "cd Scraping && nodemon saveToDB.js",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "dev:full": "concurrently \"npm run backend\" \"npm run frontend\" \"npm run scraper\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

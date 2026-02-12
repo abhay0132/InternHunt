@@ -1,0 +1,29 @@
+{
+  "name": "internhunt-scraper",
+  "version": "1.0.0",
+  "description": "InternHunt Web Scraper",
+  "type": "module",
+  "main": "scrape.js",
+  "scripts": {
+    "scrape": "node scrape.js",
+    "save": "node saveToDB.js",
+    "scrape:internshala": "node -e \"import('./scrapers/internshala.js').then(m => m.default())\"",
+    "scrape:indeed": "node -e \"import('./scrapers/indeed.js').then(m => m.default())\"",
+    "scrape:glassdoor": "node -e \"import('./scrapers/glassdoor.js').then(m => m.default())\"",
+    "scrape:all": "npm run scrape && npm run save"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4",
+    "puppeteer": "^24.37.2",
+    "puppeteer-core": "^24.37.2",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "sequelize": "^6.35.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

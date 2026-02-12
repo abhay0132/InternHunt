@@ -1,0 +1,15 @@
+# Node
+node_modules/
+npm-debug.log
+
+# Environment variables
+.env
+Backend/.env
+Scraping/.env
+Frontend/.env
+
+# OS files
+.DS_Store
+
+# Build
+Frontend/build
