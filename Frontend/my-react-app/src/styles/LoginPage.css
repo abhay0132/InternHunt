@@ -1,0 +1,70 @@
+/* src/styles/LoginPage.css */
+.login-page {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-box {
+  background: white;
+  border: 1px solid var(--border-color);
+  padding: 30px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.login-box h2 {
+  font-size: 14pt;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 10pt;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  font-size: 10pt;
+  border: 1px solid #828282;
+}
+
+.error-message {
+  background: #ffe6e6;
+  color: #cc0000;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 9pt;
+  border: 1px solid #ffcccc;
+}
+
+.btn {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.login-footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 10pt;
+  color: var(--text-secondary);
+}
+
+.login-footer a {
+  color: var(--orange);
+  text-decoration: none;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
